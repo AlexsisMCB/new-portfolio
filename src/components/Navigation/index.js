@@ -18,7 +18,7 @@ function Navigation() {
     ];
 
     function titleSelected (name) {
-        console.log(`${name} clicked`);
+
     }
 
     return (
