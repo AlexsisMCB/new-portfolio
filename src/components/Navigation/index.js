@@ -22,9 +22,9 @@ function Navigation() {
     }
 
     return (
-        <header className="d-flex justify-content-between">
+        <header className="d-flex j-c-b">
             <div className="symbol-h1">
-                <h1 className="display-4 font-italic"><span> </span>Alexsis Michelle</h1>
+                <h1 className="display-4 font-italic">Alexsis Michelle</h1>
             </div>
             <nav>
                 <ul className="nav">

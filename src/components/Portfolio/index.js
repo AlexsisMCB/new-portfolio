@@ -1,21 +1,25 @@
 import React from 'react';
-import photo from "../../assets/images/campground.png";
 
-function Portfolio(props) {
+function Portfolio() {
 
-    const testSample = {
-        name: "Campground, Inc",
-        description: "Second group project",
-        image: photo
-    };
+    const photos = 
+        {
+            name: 'Campground, INC.',
+            category: "campgrounds",
+            description: "National park campground search website",
+            github: "www.github.com/alirueter/campgrounds-inc",
+            link: "https://agile-journey-10175.herokuapp.com/",
+            screenshot: "campground.png"
+        };
 
     return (
         <section>
-            <h1>{testSample.name}</h1>
-            <p>{testSample.description}</p>
-            <div>
-                <img src={testSample.image} style={{width: "25%" }} alt="Campground website" />
-            </div>
+            <h1>{photos.name}</h1>
+            <img src={require(`../../assets/images/${photos.screenshot}`)} className="card images" alt={photos.category} />
+            <p>{photos.description}</p>
+            <a href={photos.github}>{photos.github}</a>
+            <br></br>
+            <a href={photos.link}>{photos.link}</a>
         </section>
     );
 }
